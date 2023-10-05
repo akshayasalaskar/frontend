@@ -1,13 +1,110 @@
+/* Reset some default styles */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Center contents vertically */
+ /* Gradient background from pink to blue */
+background: linear-gradient(to right, #39f87b, #2188f5);
+/* Gradient background */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Style the main container */
+main {
+  text-align: center;
+  padding: 20px;
+  width: 100%; /* Occupy the entire width of the viewport */
+  max-width: 400px; /* Limit the width of the container */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Slightly transparent white background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Drop shadow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Style the title */
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Style the input and button container */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+/* Style the input */
+input[type="text"] {
+  width: 92%;
+  padding: 12px; /* Medium size padding */
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 18px; /* Medium size font */
+  background-color: #f4f4f4;
+}
+
+/* Style the button */
+button {
+  width: 100%;
+  padding: 12px; /* Medium size padding */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px; /* Medium size font */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Style the list items */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.icon_holder {
+  display: flex;
+}
+
+.icon {
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 20px;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #0056b3;
 }
